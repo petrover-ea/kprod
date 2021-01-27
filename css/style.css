@@ -1,0 +1,730 @@
+/*ШРИФТЫ*/
+@font-face {
+    font-family: 'Stolzl-Thin';
+    src: url(../fonts/Stolzl-Thin.ttf);
+}
+@font-face {
+    font-family: 'Stolzl-Light';
+    src: url(../fonts/Stolzl-Light.ttf);
+}
+@font-face {
+    font-family: 'Stolzl-Regular';
+    src: url(../fonts/Stolzl-Regular.ttf);
+}
+
+/*Общие стили*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: rgba(76, 29, 210, 1);
+    background-image: url(../img/bubble.svg);
+    background-repeat: no-repeat;
+
+}
+
+/*Стили для header*/
+.header {
+    max-width: 1200px;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto 50px auto;
+    z-index: 7;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+.header-right {
+    position: relative;
+    right: 100px;
+}
+.header-nav {
+    width: 580px;
+    margin-left: 45px;
+}
+.header-logo {
+    z-index: 7;
+}
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Stolzl-Regular';
+}
+.header-nav-item {
+    z-index: 7;
+}
+.header-nav-link {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    line-height: 19px;
+}
+.header-phone {
+    margin-right: 40px;
+}
+.header-phone-link {
+    font-family: 'Stolzl-Thin';
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-btn-whatsapp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background-color: #4F15F3;
+    border-radius: 5px;
+    padding: 0 20px;
+    text-decoration: none;
+    z-index: 7;
+}
+.header-btn-text {
+    font-family: 'Stolzl-Regular';
+    color: #ffffff;
+    outline: none;
+    font-size: 17px;
+    line-height: 16px;
+}
+.header-menu-check {
+    display: none;
+}
+.header-nav-phone,
+.header-nav-btn-whatsapp {
+    display: none;
+}
+
+/*Стили для декорированных элементов*/
+.main-img-ellipce {
+    position: relative;
+    bottom: 410px;
+    left: 315px;
+    width: fit-content;
+}
+.main-img-triangle {
+    position: relative;
+    right: 1755px;
+    top: 440px;
+    z-index: 7;
+    height: fit-content;
+}
+.main-img-plus {
+    position: relative;
+    position: relative;
+    right: 465px;
+    bottom: 510px;
+}
+.main-img-plus-double {
+    width: 9px;
+    height: 9px;
+    position: relative;
+    top: 65px;
+    right: 90px;
+}
+.main-img-plus-double-two {
+    width: 9px;
+    height: 9px;
+    position: relative;
+    bottom: 280px;
+    left: 650px;
+}
+.main-img-bubble {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    z-index: 0;
+}
+.main-img-line,
+.main-img-line-two,
+.main-img-line-three,
+.main-img-line-four,
+.main-img-line-five {
+    border: 1px solid #5B2AED;
+    z-index: 0;
+    height: 100vh;
+    position: fixed;
+}
+.main-img-line {
+    left: 20px;
+}
+.main-img-line-two {
+    left: 480px;
+}
+.main-img-line-three {
+    left: 940px;
+}
+.main-img-line-four {
+    left: 1400px;
+}
+.main-img-line-five {
+    left: 1860px;
+}
+
+/*Стили основной части*/
+.main {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    height: 780px;
+    background-image: url(../img/bubble-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-block {
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+.main-block-img {
+    width: 640px;
+    display: flex;
+}
+.main-block-h1 {
+    font-family: 'Stolzl-Thin';
+    font-weight: 200;
+    font-size: 48px;
+    max-width: 600px;
+    color: #ffffff;
+    margin: 0 0 23px 0;
+    line-height: 72px;
+    z-index: 7;
+}
+.main-block-h1 strong {
+    font-family: 'Stolzl-Light';
+    font-size: 48px;
+    color: #ffffff;
+}
+.main-block-text {
+    font-family: 'Stolzl-Thin';
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 36px;
+    max-width: 500px;
+    margin: 0 0 63px 0;
+    z-index: 7;
+}
+.main-block-form {
+    display: flex;
+    z-index: 7;
+}
+.main-block-form-text {
+    width: 280px;
+    height: 55px;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 20px;
+    font-family: 'Stolzl-Light';
+    font-size: 18px;
+    outline: none;
+    margin-right: 20px;
+}
+.main-block-form-btn {
+    width: 335px;
+    height: 55px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #F86161;
+    font-family: 'Stolzl-Light';
+    font-size: 18px;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+/*Стили для main-block-img*/
+.main-block-img-points {
+    position: relative;
+    left: 510px;
+    top: 5px;
+    z-index: 0;
+    height: fit-content;
+}
+
+.main-block-img-background {
+    position: relative;
+    top: 33px;
+    left: 10px;
+    height: fit-content;
+}
+.main-block-img-women {
+    z-index: 2;
+    position: relative;
+    bottom: 50px;
+    right: 505px;
+    height: fit-content;
+}
+.main-block-img-clients {
+    position: relative;
+    z-index: 3;
+    right: 1030px;
+    bottom: 10px;
+    height: fit-content;
+}
+.main-block-img-sale {
+    position: relative;
+    right: 790px;
+    top: 250px;
+    z-index: 5;
+    height: fit-content;
+}
+.main-block-img-graphics {
+    position: relative;
+    right: 1225px;
+    top: 430px;
+    z-index: 6;
+    height: fit-content;
+}
+
+/*MEDIA Стили*/
+@media screen and (max-width: 1400px) {
+    .header-right {
+        position: inherit;
+    }
+}
+@media screen and (max-width: 1200px) {
+    /*Декоративные элементы*/
+    .main-img-line-four, 
+    .main-img-line-five, 
+    .main-block-img-background, 
+    .main-block-img-women,
+    .main-block-img-points {
+        display: none;
+    }
+    .main-img-plus-double {
+        width: 9px;
+        height: 9px;
+        position: relative;
+        top: -130px;
+        right: 90px;
+    }
+    .main-img-plus-double-two {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        bottom: 280px;
+        left: 580px;
+    }
+    .main-img-ellipce {
+        position: relative;
+        bottom: 410px;
+        left: 380px;
+        width: fit-content;
+    }
+    .main-block-img-clients {
+        z-index: 3;
+        position: initial;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-clients img {
+        width: 600px;
+    }
+    .main-block-img-sale {
+        position: initial;
+        z-index: 5;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-sale img {
+        width: 600px;
+    }
+    .main-block-img-graphics {
+        position: initial;
+        z-index: 6;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .main-block-img-graphics img {
+        width: 600px;
+    }
+
+    /*Стили шапки*/
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        margin: 0 auto;
+        background-color: rgba(76, 29, 210, 0.9);
+        z-index: 10;
+    }
+    .header-logo {
+        padding-left: 40px;
+    }
+    .header-wrapper:nth-child(2) {
+        display: none;
+    }
+    .menu-nav {
+        position: fixed;
+        left: -550px;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 100px 0;
+    }
+    .header-menu-check:checked~nav {
+        left: -45px;
+        transition: 1s;
+        z-index: 9998;
+    }
+    .header-menu-check:checked~.header-menu-label span::after {
+        transform: rotate(45deg);
+        z-index: 9999;
+        top: 80px;
+    }
+    
+    .header-menu-check:checked~.header-menu-label::after {
+        transform: rotate(-45deg);
+        z-index: 9999;
+        top: 80px;
+    }
+    
+    .header-menu-check:checked~.header-menu-label::before {
+        display: none;
+    }
+    .header-menu-label {
+        width: 35px;
+        height: 27px;
+        cursor: pointer;
+        z-index: 9999;
+        padding-right: 40px;
+    }
+    .header-menu-label span::after {
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        transition: all 0.5s ease 0s;
+        top: 88px;
+    }
+    .header-menu-label::after {
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        transition: all 0.5s ease 0s;
+    }
+    .header-menu-label::before {
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        transition: all 0.5s ease 0s;
+        top: 75px;
+    }
+    .header-nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        font-family: 'Stolzl-Regular';
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .header-nav-item {
+        z-index: 7;
+        margin: 10px auto;
+    }
+    .header-nav-phone {
+        display: block;
+        text-decoration: none;
+        outline: none;
+    }
+    .header-nav-phone {
+        margin: 10px auto;
+        font-family: 'Stolzl-Light';
+        text-align: center;
+    }
+    .header-nav-phone-link {
+        color: #ffffff;
+        outline: none;
+        text-decoration: none;
+    }
+    .header-nav-btn-whatsapp {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 160px;
+        height: 40px;
+        background-color: #4F15F3;
+        border-radius: 20px;
+        padding: 0;
+        z-index: 7;
+        text-decoration: none;
+        outline: none;
+        margin: 10px auto;
+    }
+    .header-right {
+        position: inherit;
+        display: contents;
+    }
+
+    /*Стили основной части*/
+    .main {
+        max-width: 991px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        background-image: url(../img/bubble-2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+    }
+    .main-block {
+        width: 640px;
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .main-block-h1, .main-block-text {
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+    .main-block-img {
+        width: 640px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    /*Декоративные элементы*/
+    .main-block-img-clients {
+        z-index: 3;
+        position: initial;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-sale {
+        position: initial;
+        z-index: 5;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-graphics {
+        position: initial;
+        z-index: 6;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .main-block-img-clients img, .main-block-img-sale img, .main-block-img-graphics img {
+        width: 425px;
+    }
+
+    /*Стили шапки*/
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    /*Стили основной части*/
+    .main {
+        max-width: 768px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        background-image: url(../img/bubble-2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+    }
+    .main-block {
+        width: 425px;
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .main-block-h1, .main-block-text {
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+    .main-block-img {
+        width: 425px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .main-block-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 7;
+    }
+    .main-block-form input {
+        margin: 0 auto 40px auto;
+
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    /*Декоративные элементы*/
+    .main-block-img-clients {
+        z-index: 3;
+        position: initial;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-sale {
+        position: initial;
+        z-index: 5;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-graphics {
+        position: initial;
+        z-index: 6;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .main-block-img-clients img, .main-block-img-sale img, .main-block-img-graphics img {
+    padding: 0 15px;
+    width: 320px;
+    }
+    .main-img-plus-double-two {
+        bottom: 280px;
+        left: 10px;
+    }
+
+    /*Стили шапки*/
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    /*Стили основной части*/
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        background-image: url(../img/bubble-2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+    }
+    .main-block {
+        width: 425px;
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .main-block-h1, .main-block-text {
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+    .main-block-img {
+        width: 425px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 425px) {
+    /*Декоративные элементы*/
+    .main-block-img-clients {
+        z-index: 3;
+        position: initial;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-sale {
+        position: initial;
+        z-index: 5;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto 100px auto;
+    }
+    .main-block-img-graphics {
+        position: initial;
+        z-index: 6;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .main-block-img-clients img, .main-block-img-sale img, .main-block-img-graphics img {
+        padding: 0 15px;
+        width: 290px;
+    }
+    .main-img-plus-double-two {
+        bottom: 280px;
+        left: 0px;
+    }
+    .main-img-ellipce {
+        left: 275px;
+    }
+
+    /*Стили шапки*/
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    /*Стили основной части*/
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        background-image: url(../img/bubble-2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+    }
+    .main-block {
+        width: 320px;
+        padding-top: 0;
+        margin: 0 auto;
+    }
+    .main-block-h1, .main-block-text {
+        text-align: center;
+        margin: 0 auto 40px auto;
+    }
+    .main-block-img {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .main-block-form-btn {
+        width: 300px;
+        height: 55px;
+    }
+    
+}
